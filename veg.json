@@ -1,17 +1,18 @@
 
  [
      
-    {"SerialNumber":"1", "Item":"Rice", "unit":"Kg","Quantity":"5k", "Note":"Brown rice","Department":" rice"},
-    {"SerialNumber":"2", "Item":"sugar", "unit":"Kg","Quantity":"5k", "Note":"Brown ","Department":" grocer"},
-    {"SerialNumber":"3", "Item":"jaggary", "unit":"Kg","Quantity":"5k", "Note":"Brown ","Department":" grinded"},
-    {"SerialNumber":"4", "Item":"salt", "unit":"Kg","Quantity":"5k", "Note":"white","Department":" white"},
-    {"SerialNumber":"5", "Item":"oil", "unit":"liter","Quantity":"1l", "Note":"Brown","Department":" grocer"},
-    {"SerialNumber":"6", "Item":"soap", "unit":"number","Quantity":"5", "Note":"Bath","Department":" white"},
-    {"SerialNumber":"7", "Item":"urdal", "unit":"Kg","Quantity":"5k", "Note":"white","Department":" grinded"},
-    {"SerialNumber":"8", "Item":"wheat", "unit":"Kg","Quantity":"5k", "Note":"Brown","Department":" rice"},
-    {"SerialNumber":"9", "Item":"milk", "unit":"Kg","Quantity":"5k", "Note":"almarai","Department":" cold"},
-    {"SerialNumber":"10", "Item":"yogurt", "unit":"Liters","Quantity":"1l", "Note":"al rawabi","Department":" cold"}
+    {"SerialNumber":"1", "Item":"TV", "unit":"number","Quantity":"5", "Note":"Brown ","Department":"Electronics"},
+    {"SerialNumber":"2", "Item":"sugar", "unit":"Kg","Quantity":"5k", "Note":"Brown ","Department":"Backery"},
+    {"SerialNumber":"3", "Item":"jaggary", "unit":"Kg","Quantity":"5k", "Note":"Brown ","Department":"Backery"},
+    {"SerialNumber":"4", "Item":"salt", "unit":"Kg","Quantity":"5k", "Note":"white","Department":"grocery"},
+    {"SerialNumber":"5", "Item":"yogurt", "unit":"Liters","Quantity":"1l", "Note":"al rawabi","Department":"diary"},
    
+    {"SerialNumber":"6", "Item":"carrot", "unit":"Kg","Quantity":"5k", "Note":"Brown","Department":"vegetable"},
+    {"SerialNumber":"7", "Item":"Refrigerator", "unit":"number","Quantity":"5", "Note":"Bath","Department":"Electronics"},
+    {"SerialNumber":"8", "Item":"Beetroot", "unit":"Kg","Quantity":"5k", "Note":"white","Department":"vegetable"},
+    
+    {"SerialNumber":"9", "Item":"milk", "unit":"Kg","Quantity":"5k", "Note":"almarai","Department":"diary"},
+    {"SerialNumber":"10", "Item":"oil", "unit":"liter","Quantity":"1l", "Note":"Brown","Department":"grocery"}
    
  ]
 

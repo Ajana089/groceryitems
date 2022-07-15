@@ -1,14 +1,31 @@
-  
+                      //unique=[];
                
              var xhttp=new XMLHttpRequest();
              xhttp.onreadystatechange=function(e){
                 if(this.readyState==4&&this.status==200){
                      response=JSON.parse(this.responseText);
                      buildTable(response);
-                     //selectvalue(response) ;    
-                    getdata(response);
+                    
+
+                     getvalue(response);
+                              
+                      console.log(response);
+                      
+                      for(i=0;i<response.length;i++){
+                      
+                        if(unique.includes(response[i].Department)){
+        
+                        }
+                        else
+                        unique.push(response[i].Department)
+        
+                      }
+                      console.log(unique);
+                
                      
         }
+                      
+
             }
             xhttp.open("get","veg.json",true);
             xhttp.send();
@@ -38,21 +55,40 @@
           
          
 
-          
+                 function getvalue(data){
+
+                                  unique=[];
+                                  var response=data;
+                                 
+                                  for(var i=0;i<response.length;i++){
+                                  
+                                    if(unique.includes(response[i].Department)){
+                    
+                                    }
+                                    else
+                                    unique.push(response[i].Department)
+                    
+                                  }
+                                  console.log(unique);
+                                  for (i=0;i<unique.length;i++){
+
+                                    var select = document.getElementById("arr");
+                                    //var options = ["1", "2", "3", "4", "5"];
+                                    
+                                     
+                                        var opt = unique[i];
+                                        var el = document.createElement("option");
+                                        el.textContent = opt;
+                                        el.value = opt;
+                                        select.appendChild(el);
+                                    
+                          
+                                  }
+                          
+                 }
+
+
               
-
-               function getvalue(){
-                  var selected=document.getElementById("arr").value;
-                    return selected;
-                }
-        
-               
-             function   getdata(response){
-              var data=response;
-              return data;
-             }
-
-
              function deptTable(data){
               var depttable = document.getElementById('depttable')
               
@@ -77,40 +113,36 @@
 
         
            function filtering() {
-              
+            var table = document.getElementById('myTable');
+            var depttable = document.getElementById('myTable')
             var value=document.getElementById("arr").value;
-           var table = document.getElementById('myTable');
-           var depttable = document.getElementById('myTable')
-            if(value==='ALL'){
+          
+            if(value==='All'){
             
-              table.setAttribute("hidden","true");
+             table.setAttribute("hidden","true");
               deptTable(response);
               
             }
            
-           var output=response.filter(function (e) {
+                 var output=response.filter(function (e) {
             
                 var x= e.Department.includes(value);
                 return x;
          })
              
          console.table(output);
-        table.setAttribute("hidden","true");
+         table.setAttribute("hidden","true");
      
          deptTable(output); 
 
-
-             
-
-          }
+ }
 
 
 
 
         
                   
-                 
-                  
+    
         
         
                 
