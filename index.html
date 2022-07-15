@@ -16,22 +16,58 @@
     
 </head>
 <body>
-    <h4>Grocery</h4>
-    <table class="table table-striped">
+
+    
+    <div  style="text-align: center;"><h4>Grocery</h4></div>
+    <div>
+           <select name="dropdown" value="selected" id="arr" onchange="getvalue()">
+            <option value="ALL">ALL</option>
+            <option value="rice">rice</option>
+           <option value="white">white</option>
+           <option value="grinded">grinded</option>
+           <option value="grocer">grocer</option>
+           <option value="cold">cold</option>
+        </select>
+      <button  onclick="filtering()">click me</button>  
+         </div>
+            
+
+       
+   
+        
+    
+
+    <table  class="table table-striped" >
         <tr  class="bg-info">
             <th>SrNo</th>
             <th>Item</th>
             <th>Unit</th>
             <th> Quantity</th>
             <th> Note</th>
-            <th> Department</th>
-           
+            
+            <th col-index = 3>Department
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
         </tr>
     
         <tbody id="myTable">
             
         </tbody>
+
+        <tbody id="depttable">
+            
+        </tbody>
     </table>
+    <script>
+       
+
+
+        
+        
+    
+    </script>
  <script src="veg.js"></script> 
 </body>
 </html>
